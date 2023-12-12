@@ -1,0 +1,71 @@
+/*
+ * File: index.html
+ *
+ * Creates the starting page with redirect.
+ *
+ * Author:  Eesa Sharma <eesa@eesasharma.com>
+ * Licence: GNU v3.0 (https://en.wikipedia.org/wiki/GNU_General_Public_License)
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kombucha Clicker Start</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      margin: 20px;
+      background: url('images/background.jpg');
+    }
+
+    #container {
+      width: 400px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      opacity: 0; /* Set initial opacity to 0 */
+      animation: fadeInOut 2s infinite; /* Apply the animation */
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0.5;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <h1>Kombucha Clicker</h1>
+    <p>Welcome to Kombucha Clicker! Here you can make some sweet, tangy Kumbucha! Enjoy! 😋</p>
+    <button id="button" onclick="redirect()">Play</button>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = 'game.html';
+    }
+    </script>
+</body>
+</html>
